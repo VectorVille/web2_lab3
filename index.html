@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <button id="open_modal" class="button">Регистрация</button>
+    </header>
+    <div id="modal" class="modal">
+      <div id="modal_content" class="modal_content">
+        <form id="form">
+          <fieldset class="inputs">
+            <label
+              >email
+              <input
+                name="email"
+                id="email"
+                type="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                required
+              />
+            </label>
+            <label
+              >password
+              <input
+                name="password"
+                id="password"
+                type="password"
+                minlength="6"
+                required
+              />
+            </label>
+            <button id="show_password" class="button">show</button>
+          </fieldset>
+          <fieldset>
+            <output id="error_message" class="error_message"></output>
+            <input id="button" type="submit" value="submit" />
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
